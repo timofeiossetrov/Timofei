@@ -1,0 +1,74 @@
+.reds{
+    background-color: red;
+    border-width: 5 ;
+    padding: 2px;
+}
+.reds2{
+    background-color: red;
+    border-width: 5 ;
+    padding: 2px;
+}
+.reds3{
+    background-color: red;
+    border-width: 5 ;
+    padding: 2px;
+}
+.browns{
+    background-color: brown;
+    border-width: 5 ;
+    padding: 2px;
+}
+.browns2{
+    background-color: brown;
+    border-width: 5 ;
+    padding: 2px;
+}
+.blues{
+    background-color: blue;
+    border-width: 5 ;
+    padding: 2px;
+}
+.blues2{
+    background-color: blue;
+    border-width: 5 ;
+    padding: 2px;
+}
+.whites{
+    background-color: white;
+    border-width: 5 ;
+    padding: 2px;
+}
+.whites2{
+    background-color: white;
+    border-width: 5 ;
+    padding: 2px;
+}
+body{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+.base{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "reds blues blues browns browns"
+    "reds blues blues browns browns"
+    "reds browns2 whites whites reds2"
+    "whites2 browns2 whites whites reds2"
+    "whites2 reds3 reds3 blues2 reds2"
+    "whites2 reds3 reds3 blues2 reds2";
+    gap: 10px;
+}
+.reds{grid-area: reds;}
+.reds2{grid-area: reds2;}
+.reds3{grid-area: reds3;}
+.browns{grid-area: browns;}
+.browns2{grid-area: browns2;}
+.whites{grid-area: whites;}
+.whites2{grid-area: whites2;}
+.blues{grid-area: blues;}
+.blues2{grid-area: blues2;}
+html{width: 100%;
+    height: 100%;}
